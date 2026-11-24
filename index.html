@@ -1,0 +1,44 @@
+
+<html>
+<head>
+    <title>First Experience</title>
+</head>
+
+<body>
+
+    <h1>Basic File</h1>
+
+    <p>Welcome to Mathematics Website</p>
+
+    <input type="number" id="a" placeholder="Enter A">
+
+    <input type="number" id="b" placeholder="Enter B">
+
+    <button onclick="add()"
+    >Result</button>
+    <br>
+
+    <button onclick="sub()">Result</button>    
+    <p id="result"></p>
+
+    <script>
+        function add() {
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+
+            let sum = a + b;
+
+            document.getElementById("result").innerHTML = sum;
+        }
+        function sub() {
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+
+            let sub = a - b;
+
+            document.getElementById("result").innerHTML = sub;
+        }
+    </script>
+
+</body>
+</html>
